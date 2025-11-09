@@ -1,0 +1,23 @@
+//prime no or not through array
+#include <stdio.h>
+int main(){
+    int arr[10],i,j,c;
+    printf("enter 10 numbers");
+    for(i=0;i<10;i++){
+        scanf("%d",&arr[i]);
+    }
+        for (i=0;i<10;i++){
+            j=2;
+            c=0;
+            while(j<arr[i]){
+                if(arr[i]%j==0)
+                c=c+1;
+                j++;
+            }
+            if(c==0)
+            printf("%d",arr[i]);
+            
+
+        }
+    
+}
